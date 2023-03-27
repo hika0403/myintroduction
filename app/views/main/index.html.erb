@@ -16,8 +16,10 @@
         <a href="#"><h1 class="topName">K.HIKARU</h1></a>
       </div>
       <div class="github">
-        <%= image_tag "GitHub_Mark.png", class:"GitHub_Mark" %>
-        <%= image_tag "GitHub_Logo.png", class:"GitHub_Logo" %>
+        <%= link_to "https://github.com/hika0403/myintroduction" do %>
+          <%= image_tag "GitHub_Mark.png", class:"GitHub_Mark" %>
+          <%= image_tag "GitHub_Logo.png", class:"GitHub_Logo" %>
+        <% end %>
       </div>
       <nav>
         <ul class="connectBtn">
@@ -35,7 +37,7 @@
           <div class="mainVisualText">
             <p>小松 ひかる</p>
             <p>1999.4.3</p>
-            <p>神奈川県横浜市</p>
+            <p>神奈川県横浜市出身</p>
             <p>道理百遍 義理一遍</p>
           </div>
         </div>
@@ -44,15 +46,19 @@
       <div class="about">
         <div class="aboutImg">
           <%= image_tag "newotani_1.jpeg", class:"aboutImgContent" %>
-          <%= image_tag "newotani_2.jpeg", class:"aboutImgContent" %>
+          <%= image_tag "newotaniContest.HEIC", class:"aboutImgContent" %>
         </div>
         <div class="aboutText">
-          <p>2020年 新入社員として株式会社ニュー・オータニへ</p>
-          <p>ベル・客室係を経て電話対応オペレーターとして約3年間従事</p>
+          <p>東京オリンピック2020へ大きく関わりたいという理由で、</p>
+          <p>2020年 新入社員で株式会社ニュー・オータニへ入社。</p>
+          <p>ベル・客室係を経験した後、電話対応のオペレーターとして約3年間従事。</p>
+          <p>外線からのホテル案内や客室内からの問い合わせに対応していました。</p>
           <br>
-          <h3>千代田区電話対応コンクールで優秀賞</h3>
-          <p>毎年、日本電信電話協会主催で行われる千代田区電話対応コンクールへ出場</p>
-          <p>約100名の出場者の中で優秀賞をいただきました</p>
+          <br>
+          <h3>2021年 千代田区電話対応コンクール出場</h3>
+          <p>毎年、日本電信電話協会主催で行われる</p>
+          <p>千代田区電話対応コンクールへ会社代表として出場し、</p>
+          <p>約100名の出場者の中で優秀賞を獲得することができました。</p>
         </div>
       </div>
       <h2 id="hobby">Hobby</h2>
@@ -68,16 +74,19 @@
           </div>
         </div>
         <div class="hobbyText">
-          <h3>テニス</h3>
-          <p>2021年 硬式テニスを始める</p>
+          <h3>硬式テニス</h3>
+          <p>全く運動する習慣がなかった為、長く続けられる運動をしようと
+          <br>2021年〜 テニススクールに通い、初心者コースから始めました。
+          <br>最近は週１回ほど行い、中級コースまで上達することができ、
+          <br>ダブルス試合にも参加しています。</p>
           <p>愛用ラケット:Gravity MP LITE</p>
           <p>片面がブルー＆バイオレット、<br>もう片面がイエロー＆グリーンのデザイン✨</p>
-          <p>週一回ほど楽しみ、年に数回ダブルス試合に参加しています。</p>
+          <br>
           <h3>旅行</h3>
           <p>国内外ともに旅行に行くのが好きで、<br>コロナ以前には年に一回以上海外に行くことが目標でした。</p>
-          <p>行ってよかった国はアイルランド🇮🇪とパラオ🇵🇼です。</p>
-          <p>アイルランドは黒ビール「ギネス」が生まれた国で<br>陽気な音楽が町中に広がっていました。</p>
-          <p>パラオは新婚旅行でも大人気で、今までで1番海が綺麗でした。</p>
+          <p>今まで行ってよかった国はアイルランド🇮🇪とパラオ🇵🇼です。</p>
+          <p>アイルランドは黒ビール「ギネス」が生まれた国で<br>常に陽気な音楽が町中に広がっていました。</p>
+          <p>パラオは新婚旅行でも人気の国で、綺麗な海が魅力的でした。</p>
         </div>
       </div>
       <div class="skill">
@@ -91,6 +100,7 @@
 
         </div>
       </div>
+      <%= render "contacts/index" %>
       <div class="contact">
         <h2 id="contact">Contact</h2>
         <div class="Form">
