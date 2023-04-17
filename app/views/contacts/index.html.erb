@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css/myintroduction.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <title>K.HikaruIntroduction</title>
@@ -37,7 +37,7 @@
     <main>
       <div class="home">
         <div class="mainVisual">
-          <%= image_tag "mainVisual1.png", class:"mainVisualImg" %>
+          <%= image_tag "mainVisual.png", class:"mainVisualImg" %>
           <div class="mainVisualText">
             <p>小松 ひかる</p>
             <p>1999.4.3</p>
@@ -66,32 +66,25 @@
         </div>
       </div>
       <h2>Hobby</h2>
-      <div class="hobby">
-        <div class="hobbyImg">
-          <div class="hobbyImgTennis">
-            <%= image_tag "tennisplay.jpg", class:"tennisImg" %>
-            <%= image_tag "gravity.png", class:"tennisImg" %>
-          </div>
-          <div class="hobbyImgTrip">
-            <%= image_tag "ireland.jpg", class:"tripImg" %>
-            <%= image_tag "palao.jpg",  class:"tripImg" %>
-          </div>
-        </div>
-        <div class="hobbyText">
-          <h3>硬式テニス</h3>
-          <p>全く運動する習慣がなかった為、長く続けられる運動をしようと
-          <br>2021年〜 テニススクールに通い、初心者コースから始めました。
-          <br>最近は週１回ほど行い、中級コースまで上達することができ、
-          <br>ダブルス試合にも参加しています。</p>
-          <p>愛用ラケット:Gravity MP LITE</p>
-          <p>片面がブルー＆バイオレット、<br>もう片面がイエロー＆グリーンのデザイン✨</p>
-          <br>
-          <h3>旅行</h3>
-          <p>国内外ともに旅行に行くのが好きで、<br>コロナ以前には年に一回以上海外に行くことが目標でした。</p>
-          <p>今まで行ってよかった国はアイルランド🇮🇪とパラオ🇵🇼です。</p>
-          <p id="skill">アイルランドは黒ビール「ギネス」が生まれた国で<br>常に陽気な音楽が町中に広がっていました。</p>
-          <p>パラオは新婚旅行でも人気の国で、綺麗な海が魅力的でした。</p>
-        </div>
+      <ul class="slider">
+        <li><%= image_tag "tennisplay.jpg", class:"sliderimg" %></li>
+        <li><%= image_tag "gravity.png", class:"sliderimg" %></li>
+        <li><%= image_tag "ireland.jpg", class:"sliderimg" %></li>
+        <li><%= image_tag "palao.jpg",  class:"sliderimg" %></li>
+        <li><%= image_tag "harry.jpg",  class:"sliderimg" %></li>
+      </ul>
+      <div class="hobbyText">
+        <h3>硬式テニス</h3>
+        <p>全く運動する習慣がなかった為、長く続けられる運動をしようと、2021年からテニススクールに通い始めました。
+        <br>最近は週１回ほど行い、中級コースまで上達することができ、ダブルス試合にも参加しています。</p>
+        <p>愛用ラケット:Gravity MP LITE
+        <br>片面がブルー＆バイオレット、もう片面がイエロー＆グリーンのデザイン✨</p>
+        <br>
+        <h3>旅行</h3>
+        <p>国内外ともに旅行に行くのが好きで、コロナ以前には年に一回以上海外に行くことを目標にしていました。</p>
+        <p>今まで行ってよかった国はアイルランド🇮🇪とパラオ🇵🇼です。</p>
+        <p id="skill">アイルランドは黒ビール「ギネス」が生まれた国で、常に陽気な音楽が町中に広がっていました。
+        <br>パラオは新婚旅行でも人気の国で、綺麗な海が魅力的でした。</p>
       </div>
       <div class="skill">
         <h2>Skill</h2>
@@ -101,7 +94,6 @@
           <i class="devicon-ruby-plain-wordmark"></i>
           <i class="devicon-rails-plain-wordmark"></i>
           <i class="devicon-github-original-wordmark"  id="contact"></i>
-
         </div>
       </div>
 
@@ -147,5 +139,6 @@
       </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   </body>
 </html>

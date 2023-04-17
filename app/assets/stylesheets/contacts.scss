@@ -89,7 +89,7 @@ li{
 }
 
 .mainVisualImg{
-  width: 400px;
+  width: 330px;
   height: 400px;
 }
 
@@ -124,39 +124,21 @@ li{
 }
 
 /* hobby */
-.hobby{
-  width: 80%;
-  margin: 0 auto;
-  max-width: 1500px;
-  display: flex;
+/* slider */
+.sliderimg {
+  width:100%;
+  height:auto;
 }
 
-.hobbyImg{
-  margin-right: 50px;
-}
-
-.hobbyImgTennis{
-  display: flex;
-}
-.tennisImg{
-  width: 270px;
-  height: 200px;
-  margin-right: 15px;
-  margin-bottom: 120px;
-}
-
-.hobbyImgTrip{
-  display: flex;
-}
-
-.tripImg{
-  width: 270px;
-  height: 200px;
-  margin-right: 15px;
+.slider .slick-slide {
+  margin:0 10px;
 }
 
 .hobbyText{
-  font-size: 16px;
+  font-size: 18px;
+  width: 70%;
+  margin: 0 auto;
+  max-width: 1500px;
 }
 
 /* skillIcon */
