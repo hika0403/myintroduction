@@ -82,19 +82,30 @@
         <br>
         <h3>旅行</h3>
         <p>国内外ともに旅行に行くのが好きで、コロナ以前には年に一回以上海外に行くことを目標にしていました。</p>
-        <p>今まで行ってよかった国はアイルランド🇮🇪とパラオ🇵🇼です。</p>
-        <p id="skill">アイルランドは黒ビール「ギネス」が生まれた国で、常に陽気な音楽が町中に広がっていました。
+        <p id="skill">今まで行ってよかった国はアイルランド🇮🇪とパラオ🇵🇼です。</p>
+        <p>アイルランドは黒ビール「ギネス」が生まれた国で、常に陽気な音楽が町中に広がっていました。
         <br>パラオは新婚旅行でも人気の国で、綺麗な海が魅力的でした。</p>
       </div>
       <div class="skill">
         <h2>Skill</h2>
-        <div class="skillIcon">
-          <i class="devicon-html5-plain-wordmark"></i>
-          <i class="devicon-css3-plain-wordmark"></i>
-          <i class="devicon-ruby-plain-wordmark"></i>
-          <i class="devicon-rails-plain-wordmark"></i>
-          <i class="devicon-github-original-wordmark"  id="contact"></i>
-        </div>
+        <section class="bar-graph bar-graph-horizontal bar-graph-one">
+          <div class="bar-one">
+            <span class="year"><i class="devicon-html5-plain-wordmark"></i></span>
+            <div class="bar" data-percentage="80%"></div>
+          </div>
+          <div class="bar-two">
+            <span class="year"><i class="devicon-css3-plain-wordmark"></i></span>
+            <div class="bar" data-percentage="80%"></div>
+          </div>
+          <div class="bar-three">
+            <span class="year"><i class="devicon-ruby-plain-wordmark"></i><i class="devicon-rails-plain-wordmark"></i></span>
+            <div class="bar" data-percentage="60%"></div>
+          </div>
+          <div class="bar-four">
+            <span class="year"><i class="devicon-javascript-plain"></i><i class="devicon-jquery-plain-wordmark"></i></span>
+            <div class="bar" data-percentage="20%" id="contact"></div>
+          </div>
+        </section>
       </div>
 
       <% provide :title, 'お問い合わせ' %>
