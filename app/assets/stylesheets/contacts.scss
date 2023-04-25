@@ -5,7 +5,11 @@ a{
 }
 
 a:hover{
-  color: #fbc2eb;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5em;
+  text-decoration-color: rgba(246, 162, 235, 0.4);
+  text-underline-offset: -0.2em;
+  text-decoration-skip-ink: none;
 }
 
 h2{
@@ -22,15 +26,15 @@ header{
   top: 0;
   left: 0;
   width: 100%;
-  background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
-  background-blend-mode: screen;
+  border-bottom: solid 2px #000000;
+  background-color: rgb(227, 225, 225);
 }
 
 .headerinner{
   width: 80%;
   margin: 0 auto;
   max-width: 1500px;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .topLogo{
@@ -40,7 +44,7 @@ header{
 .tennisLogo{
   width: 50px;
   height: 50px;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 h1.topName{
@@ -64,7 +68,7 @@ h1.topName{
 
 /* connectBtn */
 .connectBtn{
-  font-size: 20px;
+  font-size: 18px;
   text-align: right;
   word-spacing: 0.8em;
   margin-top: 0px;
@@ -79,6 +83,7 @@ li{
 .home{
   background-color: #F8F1F5;
   padding: 250px 0 100px 0;
+  height: 500px;
 }
 
 .mainVisual{
@@ -90,12 +95,12 @@ li{
 }
 
 .mainVisualImg{
-  width: 330px;
-  height: 400px;
+  width: 350px;
+  height: 450px;
 }
 
 .mainVisualText{
-  font-size: 35px;
+  font-size: 40px;
   font-family: serif;
   padding-right: 80px;
 }
@@ -109,7 +114,7 @@ li{
 }
 
 .aboutImg{
-    margin-right: 80px;
+  margin-right: 80px;
 }
 
 .aboutImgContent{
